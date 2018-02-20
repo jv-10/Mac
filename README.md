@@ -1,5 +1,8 @@
 # Web Development in Mac #
 
+Take me to [Database](#db)
+
+
 ## Install Brew ##
 
 Go to [Brew.bh](https://brew.sh/)
@@ -8,7 +11,7 @@ Install Homebrew (package manager)
 
     /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
-## Install Dependencies ##
+#### Install Dependencies ####
     brew install homebrew/php/php71
     brew install mcrypt php71-mcrypt
     brew install composer
@@ -16,16 +19,19 @@ Install Homebrew (package manager)
     brew install mysql
     composer global require laravel/valet
 
-## Install Valet ##
+#### Install Valet ####
     export PATH=$PATH:~/.composer/vendeor/bin
     valet install
 
 
-## Navigate to folder ##
+#### Navigate to folder ####
     cd .valet
     cd sites
 
 
-## Valet Park ##
+#### Valet Park ####
     valet park
     valet domain loc
+
+
+## <a name="db"></a>Database
