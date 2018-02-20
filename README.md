@@ -1,9 +1,11 @@
 # Web Development in Mac #
 
-Take me to [Database](#db)
+## Menu
+1. [Install Brew](#brew)
+2. [Database](#db)
 
 
-## Install Brew ##
+### <a name="brew"></a>Install Brew
 
 Go to [Brew.bh](https://brew.sh/)
 
@@ -34,4 +36,22 @@ Install Homebrew (package manager)
     valet domain loc
 
 
-## <a name="db"></a>Database
+### <a name="db"></a>Database
+
+Download [Sequel Pro](https://www.sequelpro.com/)
+
+#### Set up Database
+
+Fill form as:
+
+    Name: localhost
+    Host: 127.0.0.1
+    Username: root
+    Password: (leave empty)
+
+Check connection
+
+## Menu
+1. [Install Brew](#brew)
+2. [Database](#db)
+
