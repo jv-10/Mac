@@ -19,6 +19,7 @@ Install Homebrew (package manager)
     brew install composer
     brew install npm
     brew install mysql
+    mysqladmin -u root password 'yourpassword'
     composer global require laravel/valet
 
 #### Install Valet ####
