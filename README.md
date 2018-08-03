@@ -19,7 +19,16 @@ Install Homebrew (package manager)
     brew install composer
     brew install npm
     brew install mysql
-    mysqladmin -u root password 'yourpassword'
+    
+    After installing MySQL, authenticate using the CLI e.g
+    mysql -uroot
+
+    Then run the following command to use the old authentication method:
+    ALTER USER root@localhost IDENTIFIED WITH mysql_native_password BY 'PASSWORD';
+
+    Lastly, flush the privileges:
+    FLUSH PRIVILEGES;
+    
     composer global require laravel/valet
 
 #### Install Valet ####
