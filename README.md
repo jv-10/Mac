@@ -10,7 +10,7 @@
 
 Install Chrome
 
-<a name="https://www.google.com/chrome/" target="_blank">https://www.google.com/chrome/</a>
+<a href="https://www.google.com/chrome/" target="_blank">https://www.google.com/chrome/</a>
 
     /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
