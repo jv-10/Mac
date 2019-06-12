@@ -208,6 +208,7 @@ __________________________________
 #### Switching PHP version
 
 Switch PHP version using one of four commands:
+
     valet use 5.6
     valet use 7.0
     valet use 7.1
