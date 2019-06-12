@@ -1,9 +1,17 @@
 # Web Development in Mac #
 
 ## Menu
+0. [Install Softwares](#software) (not-required)
 1. [Install Brew](#brew)
 2. [Database](#db)
 3. [SSH](#ssh)
+
+### <a name="software"></a>Install Recommended Software
+
+Install Chrome
+<a name="https://www.google.com/chrome/">https://www.google.com/chrome/</a>
+
+    /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 ### <a name="brew"></a>Install Brew
 
