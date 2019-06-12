@@ -8,11 +8,26 @@
 
 ### <a name="software"></a>Install Recommended Software
 
-Install Chrome
+#### Install Chrome ####
 
-<a href="https://www.google.com/chrome/" target="_blank">https://www.google.com/chrome/</a>
+<a href="https://www.google.com/chrome/">https://www.google.com/chrome/</a>
 
-    /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+#### Install Atom ####
+
+<a href="https://atom.io/">https://atom.io/</a>
+
+#### Install muCommander ####
+
+<a href="https://www.mucommander.com/index.html#download">https://www.mucommander.com/index.html#download</a>
+
+#### Install Sequel Pro ####
+
+<a href="https://sequelpro.com/download">https://sequelpro.com/download</a>
+
+#### Install Postman ####
+
+<a href="https://www.getpostman.com/downloads/">https://www.getpostman.com/downloads/</a>
+
 
 ### <a name="brew"></a>Install Brew
 
