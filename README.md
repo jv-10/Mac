@@ -77,14 +77,14 @@ Install Homebrew (package manager)
 
 #### Add export ####
 
-  export PATH="$PATH:$HOME/.composer/vendor/bin"  >> ~/.bash_profile
+    export PATH="$PATH:$HOME/.composer/vendor/bin"  >> ~/.bash_profile
 
 #### Check for common issues ####
 
-  valet fix
+    valet fix
 
 #### Install Valet ####
-  valet install
+    valet install
 
 
 ---------------------------------------
@@ -93,35 +93,35 @@ Install Homebrew (package manager)
 ### <a name="workflow"></a>Setup Workflow
 
 #### Install git ####
-  brew install git
+    brew install git
   
 #### Change Domain for Valet ####
-  valet domain loc
+    valet domain loc
 
 #### Setup folders ####
 
 Make folders
 
-  mkdir ~/work/development
-  cd ~/work/development
+    mkdir ~/work/development
+    cd ~/work/development
 
 #### Valet park ####
 
-  valet park
+    valet park
 
-#### Test workflow ####
+#### Create test ####
 
 create folder
-  mkdir ~/work/development/test
-  cd ~/work/development/test
+    mkdir ~/work/development/test
+    cd ~/work/development/test
 
 create index.php
-  echo "<?php phpinfo();" > index.php
+    echo "<?php phpinfo();" > index.php
 
 secure site
-  valet secure test
+    valet secure test
 
-Test
+#### Test
   Go to [https://test.loc](https://test.loc), you should see phpinfo().
 
 __________________________________
@@ -129,8 +129,8 @@ __________________________________
 
 ### <a name="npm"></a>Install npm
 
-  brew install node@8
-  brew link node@8
+    brew install node@8
+    brew link node@8
 
 __________________________________
 
@@ -208,10 +208,10 @@ __________________________________
 #### Switching PHP version
 
 Switch PHP version using one of four commands:
-  valet use 5.6
-  valet use 7.0
-  valet use 7.1
-  valet use 7.2
+    valet use 5.6
+    valet use 7.0
+    valet use 7.1
+    valet use 7.2
 
 
 ## Menu
