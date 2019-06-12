@@ -3,8 +3,15 @@
 ## Menu
 0. [Install Softwares](#software) (not-required)
 1. [Install Brew](#brew)
-2. [Database](#db)
-3. [SSH](#ssh)
+2. [Install Valet+](#valet)
+3. [Setup Workflow](#workflow)
+4. [Install npm](#npm)
+5. [Database](#db)
+6. [SSH](#ssh)
+7. [Change php versions](#phpv)
+
+---------------------------------------
+
 
 ### <a name="software"></a>Install Recommended Software
 
@@ -40,37 +47,92 @@ Install Homebrew (package manager)
 
     /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
-#### Install Dependencies ####
-    brew install homebrew/php/php71
-    brew install mcrypt php71-mcrypt
+
+---------------------------------------
+
+
+### <a name="valet"></a>Install Valet+
+
+[Documentation](https://github.com/weprovide/valet-plus)
+
+#### Update Homebrew ####
+
+    brew update
+
+#### Add the Homebrew PHP tap ####
+
+    brew tap henkrehorst/php
+
+#### Install PHP 7.2 ####
+
+    brew install valet-php@7.2
+
+#### Install Composer ####
+
     brew install composer
-    brew install npm
-    brew install mysql
-    
-    After installing MySQL, authenticate using the CLI e.g
-    mysql -uroot
 
-    Then run the following command to use the old authentication method:
-    ALTER USER root@localhost IDENTIFIED WITH mysql_native_password BY 'PASSWORD';
+#### Install Valet+ ####
 
-    Lastly, flush the privileges:
-    FLUSH PRIVILEGES;
-    
-    composer global require laravel/valet
+    composer global require weprovide/valet-plus
+
+#### Add export ####
+
+  export PATH="$PATH:$HOME/.composer/vendor/bin"  >> ~/.bash_profile
+
+#### Check for common issues ####
+
+  valet fix
 
 #### Install Valet ####
-    export PATH=$PATH:~/.composer/vendeor/bin
-    valet install
+  valet install
 
 
-#### Navigate to folder ####
-    cd .valet
-    cd sites
+---------------------------------------
 
 
-#### Valet Park ####
-    valet park
-    valet domain loc
+### <a name="workflow"></a>Setup Workflow
+
+#### Install git ####
+  brew install git
+  
+#### Change Domain for Valet ####
+  valet domain loc
+
+#### Setup folders ####
+
+Make folders
+
+  mkdir ~/work/development
+  cd ~/work/development
+
+#### Valet park ####
+
+  valet park
+
+#### Test workflow ####
+
+create folder
+  mkdir ~/work/development/test
+  cd ~/work/development/test
+
+create index.php
+  echo "<?php phpinfo();" > index.php
+
+secure site
+  valet secure test
+
+Test
+  Go to [https://test.loc](https://test.loc), you should see phpinfo().
+
+__________________________________
+
+
+### <a name="npm"></a>Install npm
+
+  brew install node@8
+  brew link node@8
+
+__________________________________
 
 
 ### <a name="db"></a>Database
@@ -137,8 +199,27 @@ Go to options and add SSH Key
 
 ![picture](https://confluence.atlassian.com/bitbucket/files/304578655/755335794/2/1502737357377/add_ssh_key.png)
 
+__________________________________
+
+
+### <a name="php v"></a>Change php versions
+
+
+#### Switching PHP version
+
+Switch PHP version using one of four commands:
+  valet use 5.6
+  valet use 7.0
+  valet use 7.1
+  valet use 7.2
+
 
 ## Menu
+0. [Install Softwares](#software) (not-required)
 1. [Install Brew](#brew)
-2. [Database](#db)
-3. [SSH](#ssh)
+2. [Install Valet+](#valet)
+3. [Setup Workflow](#workflow)
+4. [Install npm](#npm)
+5. [Database](#db)
+6. [SSH](#ssh)
+7. [Change php versions](#phpv)
