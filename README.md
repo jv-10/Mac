@@ -112,13 +112,16 @@ Make folders
 #### Create test ####
 
 create folder
+
     mkdir ~/work/development/test
     cd ~/work/development/test
 
 create index.php
+
     echo "<?php phpinfo();" > index.php
 
 secure site
+
     valet secure test
 
 #### Test
